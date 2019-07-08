@@ -16,8 +16,7 @@ public class AboutLink {
 
 	@BeforeMethod
 	public void Launch() {
-		//System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
-		System.setProperty("webdriver.chrome.driver","chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("headless");
 		options.addArguments("window-size=1200x600");
