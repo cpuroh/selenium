@@ -16,13 +16,14 @@ public class AboutLink {
 
 	@BeforeMethod
 	public void Launch() {
-		System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+		//System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+		System.setProperty("webdriver.chrome.driver","chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("headless");
 		options.addArguments("window-size=1200x600");
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-		driver.get("http://18.218.54.93:8001/project/website/");
+		driver.get("http://18.220.177.49:8001/project/website/");
 	}
 
 	@Test
